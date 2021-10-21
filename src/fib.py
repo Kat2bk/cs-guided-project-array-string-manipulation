@@ -16,7 +16,7 @@
 # improve our algorithm
 
 # memoization
-# reminder, capturing data to use later
+# like a reminder, capturing data to use later
 # object for JS, dictionary for Python
 # keys will be arg, value will be return value
 
