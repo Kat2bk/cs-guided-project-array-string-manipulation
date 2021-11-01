@@ -35,3 +35,6 @@
 # very similar to a list of characters
 # shares a lot of methods with lists (slicing, index, count, sorted)
 # strings are immutable without making a copy
+
+# 3 tests cases:
+# Pivot Index
