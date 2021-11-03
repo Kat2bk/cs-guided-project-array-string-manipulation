@@ -66,5 +66,31 @@
 # access -- print(arr[0])
 # constant runtime to access items in array O(1)
 # however, if you want to append it's O(n)
-# 
-# 
+# you cannot append to a static array, what you have to do is create an array with fixed space
+# Python/JS are dynamic arrays automatically, which resize 
+# changing a slot in an array is constant time O(1)
+# deletion is O(n)
+# insert is O(n)
+# there is a constriction on inserting elements
+
+def double_nums_in_place(a):
+    for i in range(len(a)):
+        a[i] = a[i] * 2
+
+
+def double_nums_out_place(a):
+    new_arr = []
+    for i in range(len(a)):
+        new_arr.append(a[i] * 2)
+    return new_arr
+
+# you can't mutate an integer, you can't change an immutable object
+# def add_two(a):
+#   a += 2 (this is pass by value/copy for immutable obj)
+#   return a
+
+# num = 10
+# add_two(num)
+
+# pass by reference is arrays, mutable objs. it's cheaper space wise
+
