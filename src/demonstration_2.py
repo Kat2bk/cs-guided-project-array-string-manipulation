@@ -24,7 +24,19 @@ Example 3:
 Input: [9,9,9]
 Output: [1,0,0,0]
 Explanation: The input array represents the integer 999. 999 + 1 = 1000.
+
+Understand:
+the arrays contains a non-negative number seperated into elements, which must be incremented by one
+
 """
 def plus_one(digits):
-    # Your code here
+    string = [str(integer) for integer in digits]
+    join_str = "".join(string)
+    integer = int(join_str)
+    integer += 1
+    return integer
 
+
+
+print(plus_one([9, 9, 9]))
+print(plus_one([3,2,1,9]))
